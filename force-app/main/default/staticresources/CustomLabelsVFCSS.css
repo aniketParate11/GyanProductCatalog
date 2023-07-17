@@ -1,0 +1,17 @@
+p {
+    color : black;
+    font-weight: bold;
+}
+
+h1{
+    font-size:50px;
+    font-weight: 700;
+    font-family: system-ui;
+    margin-left:200px;
+}
+
+h2{
+    font-size:25px;
+    font-weight: 700;
+    font-family: system-ui;
+}

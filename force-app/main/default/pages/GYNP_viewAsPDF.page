@@ -1,0 +1,63 @@
+<apex:page standardcontroller="GYNCO_Offer_Letter_Template__c" extensions="GYNC_viewAsPDFExtension" renderAs="pdf" applyBodyTag="false">
+
+
+    <div class="header">
+        <apex:image url="/servlet/servlet.FileDownload?file={!FileId}&operationContext=S1" width="220" height="55"/>
+        <!--<img id="Gyansys" src="https://gyansysdevelopers1-dev-ed--c.documentforce.com/servlet/servlet.FileDownload?file=0153h000001Vc0n" width="220" height="55"/>-->
+     <apex:form >
+        <apex:commandButton value="Preview as PDF"
+                 oncomplete="onControllerReturn()" onclick="doControllerSave();"/>
+         </apex:form>
+  </div>
+  <head>
+        <style>
+            body { font-family: 'Arial Unicode MS'; }
+            .companyName { font: bold 20px; color: black; }
+        </style>
+    </head>
+    <body style="margin: 0; padding: 0;">
+        <center>
+             <h1 font-style= "italic" font-weight="bold">
+                Offer Letter
+             </h1>
+        </center><br/><br/>
+       <p  text-align= "justify">
+           <!--<apex:outputText value="{!GYNCO_Interview__c.GYNCF_Template__c}">
+                                   </apex:outputText>-->
+           <apex:outputField value="{!GYNCO_Offer_Letter_Template__c.GYNCF_Template__c}"/>
+           <!--apex:outputText value="{!HTMLENCODE(GYNCO_Offer_Letter_Template__c.GYNCF_Template__c)}" 
+                            style="white-space:pre;" escape="false"/-->
+         <!--<apex:outputText value="{!GYNCO_Interview__c.Name}"/> <br/><br/>
+           Subject:&nbsp;<apex:outputText value="{!GYNCO_Interview__c.GYNCF_Subject__c}" style="font-weight:900;"/> <br/><br/> <!--need to get subject , & signature from sampleofferletter
+           
+        
+             Dear&nbsp;<apex:outputText value="{!GYNCO_Interview__c.Name}"/>,
+         <br/><br/>
+           
+           
+           <!-- Congratulations!<br/><br/>
+           
+           On behalf of GyanSys lnfotech Private Limited (the "Employer"') , we are pleased to confirm our offer of employment to you  as Software Engineer- Trainee based in Bengaluru.<br/><br/>
+
+	       We extend this offer and the opportunity with great confidence in your abilities. You have made a very favorable impression with everyone you met and we are excited with the prospect of you joining our organization.	
+           Your maximum earning potential will be Rs - <apex:outputText value="{!GYNCO_Interview__c.GYNCF_Final_offer_amount__c}"/> (including 25% variable pay-out).The joining date and location will be communicated to you on a later day. On joining, you will be the part of GyanSys Training Program which will help you to transition to the corporate world.You should also ensure that you shall continue your employment with the company for at least 36 months from the date of joining. Therefore, if you choose to be deployed on this Training and thereafter choose to discontinue your service before the completion of 36 Months, you will be required to compensate the
+           Company with a sum total of Rs. Four Lakh Fifty Thousand only (Rs 4,50,000/-).<br/>
+
+           If you wish to discuss any detail of this offer, please feel free to contact us.
+           <br/><br/>
+           
+           Sincerely,
+           <br/><br/>
+           
+           For GyanSys Infotech Private Limited.-->
+           <!--<apex:outputText value="{!GYNCO_Interview__c.GYNCF_Body__c}"/><br/><br/>
+          
+            <apex:outputText value="{!GYNCO_Interview__c.GYNCF_Signature__c}"/>-->
+           
+         
+     
+       </p>  
+           
+       
+    </body>
+</apex:page>

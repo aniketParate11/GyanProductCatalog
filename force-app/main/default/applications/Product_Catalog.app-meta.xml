@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <brand>
+        <headerColor>#3F28C4</headerColor>
+        <logo>Gyansys_Logo</logo>
+        <logoVersion>1</logoVersion>
+        <shouldOverrideOrgTheme>true</shouldOverrideOrgTheme>
+    </brand>
+    <description>This is used to categorize the products.</description>
+    <formFactors>Small</formFactors>
+    <formFactors>Large</formFactors>
+    <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
+    <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
+    <isNavTabPersistenceDisabled>false</isNavTabPersistenceDisabled>
+    <label>Product Catalog</label>
+    <navType>Standard</navType>
+    <tabs>standard-home</tabs>
+    <tabs>Product_Catalog</tabs>
+    <tabs>Catalog_Admin</tabs>
+    <tabs>Upload_Products</tabs>
+    <tabs>GYNCO_Product_Category__c</tabs>
+    <tabs>GYNCO_Product_Review__c</tabs>
+    <tabs>Snapshots_opportunity__c</tabs>
+    <uiType>Lightning</uiType>
+    <utilityBar>Product_Catalog_UtilityBar</utilityBar>
+</CustomApplication>

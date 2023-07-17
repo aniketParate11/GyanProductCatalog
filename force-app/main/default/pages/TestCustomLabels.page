@@ -1,0 +1,8 @@
+<apex:page tabStyle="Account">
+   <apex:form >
+     <apex:pageblock >
+       <apex:outputText value="Value stored in Demo custom label is : "/>
+       <apex:outputText value="{!$Label.Testing_Custom_Labels}" style="font-weight:bold"/>
+     </apex:pageblock>
+   </apex:form>
+</apex:page>

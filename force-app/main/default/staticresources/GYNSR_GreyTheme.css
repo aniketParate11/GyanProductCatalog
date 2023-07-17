@@ -1,0 +1,127 @@
+/************************************GYNL_CatalogAdmin.css*********************************************/
+.themeClass .slds-modal__footer{
+	background-color: #bbbbbb !important;
+}
+.themeClass .slds-button_brand{
+	background-color: #706e6b !important;
+}
+.themeClass .slds-button--brand{
+	background-color: #706e6b !important;
+}
+.themeClass .slds-button_outline-brand{
+	color: #706e6b !important;
+    border-color: #706e6b !important;
+}
+.themeClass .slds-input:focus{
+	box-shadow:#706e6b !important;
+}
+.themeClass .slds-button--neutral:focus{
+	background-color:#bbbbbb !important;
+}
+.themeClass .slds-tree__item.slds-is-hovered{
+	background-color:#bbbbbb !important;
+}
+.themeClass .slds-form-element__label{
+	font-weight: bold !important;
+}
+.themeClass .slds-text-heading--medium{
+	font-weight: bold !important;
+}
+.themeClass .slds-button__icon{
+	color: #706e6b;
+}
+.themeClass .slds-tree__item:hover{
+	background: #bbbbbb !important;
+}
+/************************************GYNL_SearchProducts.css*********************************************/
+
+/************************************GYNL_TreeDisplayCategories.css**********************************************/
+
+/************************************GYNL_productDetailComponent.css*********************************************/
+
+
+/************************************GYNL_SearchFunctionalityComponent.css*****************************************/
+
+.themeClass .activeSearch{
+  background-color: #706e6b !important;
+  color: white !important;
+  font-size: 12px;
+}
+/***************************************GYNL_ProductCatalogBaseComponent.css***********************************************/
+.themeClass .gridLeftBorderColor{
+    border-left: 1px solid #bbbbbb !important;
+}
+.themeClass .tabHeaderBorder{
+	border-top: 1px solid #bbbbbb !important;
+}
+.themeClass .slds-tabs_scoped__link:hover{
+    color: white !important;
+    background-color: #706e6b !important;
+    border-color: #706e6b !important;
+}
+.themeClass .slds-tabs_scoped__link:hover .slds-icon_container svg{
+    fill: white !important;
+}
+.themeClass .slds-button_icon svg{
+    fill: #706e6b;
+}
+
+/*****************************************GYNL_browseProduct**********************************************************************/
+.themeClass .ulClass li a.active {
+  background-color: #706e6b !important;
+  color: white !important;
+}
+.themeClass .ulClass li a:hover:not(.active) {
+  background-color: #bbbbbb !important;
+  color: #706e6b !important;
+  font-size: 12px !important;
+}
+.themeClass .ulClass{
+background-color: white !important;
+}
+.themeClass .slds-icon_xx-small{
+    fill: #706e6b;
+}
+.themeClass .ulClass{
+	 background-color: white !important;
+}
+.themeClass .slds-button__icon_right{
+	fill: #706e6b !important;
+}
+.themeClass .slds-button__icon_left{
+	fill: #706e6b !important;
+}
+/****************************************GYNL_ProductGrid.css**********************************************************************/
+.themeClass .Result{
+    background-color:#706e6b !important;
+}
+.themeClass .pageNoBtn .slds-button__icon_right{
+	fill: #706e6b !important;
+}
+.themeClass .pageNoBtn .slds-button__icon_left {
+	fill: #706e6b !important;
+}
+/***************************************GYNL_UploadProducts.css*****************************************************************/
+/*.themeClass .slds-button__icon_right{
+	fill: white !important;
+}
+.themeClass .slds-button__icon_left{
+	fill: white !important;
+}*/
+/**************************************GYNL_relatedProducts.css*****************************************/
+.themeClass .slds-button__icon{
+	    color: #706e6b;
+}
+/***************************************************GYNL_Reviews**********************************************/
+.themeClass .c1 .slds-tabs_scoped__link{
+	background-color: #706e6b !important;
+    color: white !important;
+    font-size: 17px !important;
+	font-weight: bolder !important;
+}
+.themeClass .slds-form-element__label{
+	font-size: 13px !important;
+}
+.themeClass .slds-button_brand .slds-m-top_small{
+	    font-size: 15px !important;
+}

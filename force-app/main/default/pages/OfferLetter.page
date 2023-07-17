@@ -1,0 +1,37 @@
+<apex:page standardcontroller="GYNCO_Interview__c" extensions="GYNC_displayLogoExtension" renderAs="pdf" applyBodyTag="false">
+
+
+    <div class="header">
+        <apex:image url="/servlet/servlet.FileDownload?file={!FileId}&operationContext=S1" width="220" height="55"/>
+        <!--<img id="Gyansys" src="https://gyansysdevelopers1-dev-ed--c.documentforce.com/servlet/servlet.FileDownload?file=0153h000001Vc0n" width="220" height="55"/>-->
+     <apex:form >
+        <apex:commandButton value="Generate Offer Letter"
+                 oncomplete="onControllerReturn()" onclick="doControllerSave();"
+                 rendered="{IF( GYNCO_Interview__c.GYNCF_Status__c	== 'Complete')true,false}" />
+         </apex:form>
+  </div>
+  <head>
+        <style>
+            body { font-family: 'Arial Unicode MS'; }
+            .companyName { font: bold 20px; color: black; }
+        </style>
+    </head>
+    <body style="margin: 0; padding: 0;">
+        <center>
+             <h1 font-style= "italic" font-weight="bold">
+                Offer Letter
+             </h1>
+        </center><br/><br/>
+       <p  text-align= "justify">
+           <!--<apex:outputText value="{!GYNCO_Interview__c.GYNCF_Template__c}">
+                                   </apex:outputText>-->
+           <apex:outputField value="{!GYNCO_Interview__c.GYNCF_Template__c}"/>
+           <!--<apex:outputText value="{!HTMLENCODE(GYNCO_Interview__c.GYNCF_Template__c)}" 
+                            style="white-space:pre;" escape="false"/>-->
+         
+     
+       </p>  
+           
+       
+    </body>
+</apex:page>

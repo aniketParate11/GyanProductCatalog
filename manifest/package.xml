@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+    <types>
+        <members>GYNC_CatalogController</members> 
+
+<members>GYNC_CatalogController_Test</members> 
+
+<members>GYNC_ProductCatalogBrowse</members> 
+
+<members>GYNC_ProductCatalogBrowse_test</members> 
+
+<members>GYNC_ProductTreeControllerUpdate</members> 
+
+<members>GYNC_ProductTreeControllerUpdate_Test</members> 
+
+<members>GYNC_SearchController</members> 
+
+<members>GYNC_SearchController_test</members> 
+
+<members>GYNC_displayAllReviewApex</members> 
+
+<members>GYNC_displayAllReviewApex_test</members> 
+
+<members>GYNC_productDetailList</members> 
+
+<members>GYNC_productDetailList_test</members> 
+
+<members>GYNC_productGridController</members> 
+
+<members>GYNC_productGridController_test</members> 
+
+<members>GYNC_productRatingChartApex</members> 
+
+<members>GYNC_productRatingChartApex_test</members> 
+        <name>ApexClass</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>ApexComponent</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>ApexPage</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>ApexTestSuite</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>ApexTrigger</name>
+    </types>
+    <types> 
+
+<members>Product_Catalog</members> 
+
+<name>CustomApplication</name> 
+
+</types> 
+    <types>
+        <members>GYNE_DynamicSearchEvent</members> 
+
+<members>GYNE_ProductGridInboundEvent</members> 
+
+<members>GYNE_changeReviewTab</members> 
+
+<members>GYNE_editAlreadyMappedEvent</members> 
+
+<members>GYNE_searchBAr</members> 
+
+<members>GYNE_selectThemeEvent</members> 
+
+<members>GYNL_ProductCatalogBaseComponent</members> 
+
+<members>GYNL_ProductGrid</members> 
+
+<members>GYNL_SearchFunctionalityComponent</members> 
+
+<members>GYNL_SearchProducts</members> 
+
+<members>GYNL_addReview</members> 
+
+<members>GYNL_adminPage</members> 
+
+<members>GYNL_adminPageApp</members> 
+
+<members>GYNL_adminScreenER</members> 
+
+<members>GYNL_productDetailComponent</members> 
+
+<members>GYNL_productRatingChart</members> 
+
+<members>GYNL_relatedProducts</members> 
+        <name>AuraDefinitionBundle</name>
+    </types>
+
+    <types> 
+
+<members>*</members> 
+
+<name>CustomLabels</name> 
+
+</types> 
+    <types>
+        <members>*</members>
+        <name>LightningComponentBundle</name>
+    </types>
+
+    <types> 
+
+<members>Account</members> 
+
+<members>Account</members> 
+
+<members>AccountBrand</members> 
+
+<members>GYNCO_Catalog_Master__c</members> 
+
+<members>GYNCO_Configuration__c</members> 
+
+<members>GYNCO_Product_Category__c</members> 
+
+<members>GYNCO_Product_Review__c</members> 
+
+<members>GYNCO_Quote_Line_Item__c</members> 
+
+<members>GYNCO_Quote__c</members> 
+
+<members>Pricebook2</members> 
+
+<members>PricebookEntry</members> 
+
+<members>Product2</members> 
+
+<members>ProductAttribute</members> 
+
+<members>ProductCatalog</members> 
+
+<members>ProductCategory</members> 
+
+<members>ProductCategoryMedia</members> 
+
+<members>ProductCategoryProduct</members> 
+
+<members>ProductConsumed</members> 
+
+<members>ProductConsumedState</members> 
+
+<members>ProductItem</members> 
+
+<members>Schedule__c</members> 
+
+<members>SchedulingConstraint</members> 
+
+<name>CustomObject</name> 
+
+</types> 
+    <types>
+        <members>*</members>
+        <name>StaticResource</name>
+    </types>
+    <version>57.0</version>
+</Package>

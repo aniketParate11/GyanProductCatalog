@@ -1,0 +1,136 @@
+<apex:page Controller="CustomLabelsOnAccount" sidebar="false">
+    <apex:stylesheet value="{!$Resource.CustomLabelsVFCSS}"/>
+    <apex:image style="margin-left:20px" id="theImage" value="https://prnewswire2-a.akamaihd.net/p/1893751/sp/189375100/thumbnail/entry_id/1_ceagatdf/def_height/524/def_width/1000/version/100011/type/2/q/100" width="15%" height="15%"/>
+    <h1>{!$Label.AaLabel01}</h1>  <!--Top Heading CL01-->
+    <apex:pageBlock >
+        <apex:pageBlockSection title="{!$Label.AaLabel02}" columns="2"> <!--CL02-->     
+            <apex:pageBlockSectionItem dataStyle="width:10%" labelStyle="width:23%" >
+                <apex:outputLabel >
+                    <p>
+                        {!$Label.AaLabel03} : {!DAY(TODAY())}/{!MONTH(TODAY())}/{!YEAR(TODAY())}  <!--CL03-->
+                    </p>
+                    <p>
+                        {!$Label.AaLabel05} : {! $User.FirstName & ' ' & $User.LastName} </p>  <!--CL05-->
+                    <p>
+                        {!$Label.AaLabel06} : {! $User.Username} <!--CL06-->
+                        ({!$Label.AaLabel07} {! IF ($User.IsActive, 'Active', 'Inactive')}) <!--CL07-->
+                    </p> 
+                    <p> {!$Label.AaLabel08} : {!$Profile.Name}</p> <!--CL08-->
+                    <p>
+                        {!$Label.AaLabel09} : {!$Profile.Id} <!--CL09-->
+                    </p>
+                </apex:outputLabel>
+            </apex:pageBlockSectionItem>
+            <apex:pageBlockSectionItem dataStyle="width:10%" labelStyle="width:23%" >
+                <apex:outputLabel > <p>
+                    {!$Label.AaLabel10} : {! $Organization.Id} <!--CL10--> <br/> {!$Label.AaLabel11} :  {! $Organization.Name} <br/> <!--CL11-->
+                    {!$Label.AaLabel12} : {!$Organization.Country} <!--CL12-->
+                    </p></apex:outputLabel>
+            </apex:pageBlockSectionItem>
+        </apex:pageBlockSection>
+    </apex:pageBlock>
+    
+    <apex:pageBlock >
+    <h2>
+        {!$Label.AaLabel13}  <!--CL13-->
+        </h2><br/>
+    
+    <apex:tabPanel switchType="client"><br/>
+        <apex:tab label="{!$Label.AaLabel14}" name="Opportunity" id="Qualification" labelWidth="220px"> <!--CL14-->
+            <apex:pageBlock >
+                <apex:pageBlockTable value="{!optQual}" var="Opt">
+                    <apex:column value="{!Opt.Name}"/>
+                    <apex:column value="{!Opt.Account.Name}"/>
+                    <apex:column value="{!Opt.StageName}"/>
+                    <apex:column value="{!Opt.Amount}"/>
+                    <apex:column value="{!Opt.CloseDate}"/>
+                    <apex:column value="{!Opt.OwnerId}"/>
+                    <apex:column value="{!Opt.Probability}"/>
+                    <apex:column value="{!Opt.CurrencyIsoCode}"/>
+                </apex:pageBlockTable>
+            </apex:pageBlock>
+        </apex:tab>
+        <apex:tab label="{!$Label.AaLabel015}" name="Opportunity1" id="NeedAnalysis" labelWidth="220px">  <!--CL15-->
+            <apex:pageBlock >
+                <apex:pageBlockTable value="{!optNA}" var="Opt">
+                    <apex:column value="{!Opt.Name}"/>
+                    <apex:column value="{!Opt.Account.Name}"/>
+                    <apex:column value="{!Opt.StageName}"/>
+                    <apex:column value="{!Opt.Amount}"/>
+                    <apex:column value="{!Opt.CloseDate}"/>
+                    <apex:column value="{!Opt.OwnerId}"/>
+                    <apex:column value="{!Opt.Probability}"/>
+                    <apex:column value="{!Opt.CurrencyIsoCode}"/>
+                </apex:pageBlockTable>
+            </apex:pageBlock>
+        </apex:tab>
+        <apex:tab label="{!$Label.AaLabel16}" name="Opportunity2" id="Proposal" labelWidth="220px">  <!--CL16-->
+            <apex:pageBlock >
+                <apex:pageBlockTable value="{! optPQ}" var="Opt">
+                    <apex:column value="{!Opt.Name}"/>
+                    <apex:column value="{!Opt.Account.Name}"/>
+                    <apex:column value="{!Opt.StageName}"/>
+                    <apex:column value="{!Opt.Amount}"/>
+                    <apex:column value="{!Opt.CloseDate}"/>
+                    <apex:column value="{!Opt.OwnerId}"/>
+                    <apex:column value="{!Opt.Probability}"/>
+                    <apex:column value="{!Opt.CurrencyIsoCode}"/>
+                </apex:pageBlockTable>
+            </apex:pageBlock>
+        </apex:tab>
+        <apex:tab label="{!$Label.AaLabel17}" name="Opportunity3" id="ClosedWon" labelWidth="220px"> <!--CL17-->
+            <apex:pageBlock >
+                <apex:pageBlockTable value="{! optCW}" var="Opt">
+                    <apex:column value="{!Opt.Name}"/>
+                    <apex:column value="{!Opt.Account.Name}"/>
+                    <apex:column value="{!Opt.StageName}"/>
+                    <apex:column value="{!Opt.Amount}"/>
+                    <apex:column value="{!Opt.CloseDate}"/>
+                    <apex:column value="{!Opt.OwnerId}"/>
+                    <apex:column value="{!Opt.Probability}"/>
+                    <apex:column value="{!Opt.CurrencyIsoCode}"/>
+                </apex:pageBlockTable>
+            </apex:pageBlock>
+        </apex:tab>
+        <apex:tab label="{!$Label.AaLabel18}" name="Opportunity4" id="Prospecting" labelWidth="220px"> <!--CL18-->
+            <apex:pageBlock >
+                <apex:pageBlockTable value="{!optPR}" var="Opt">
+                    <apex:column value="{!Opt.Name}"/>
+                    <apex:column value="{!Opt.Account.Name}"/>
+                    <apex:column value="{!Opt.StageName}"/>
+                    <apex:column value="{!Opt.Amount}"/>
+                    <apex:column value="{!Opt.CloseDate}"/>
+                    <apex:column value="{!Opt.OwnerId}"/>
+                    <apex:column value="{!Opt.Probability}"/>
+                    <apex:column value="{!Opt.CurrencyIsoCode}"/>
+                </apex:pageBlockTable>
+            </apex:pageBlock>
+        </apex:tab>
+        
+        <apex:tab label="{!$Label.AaLabel19}" name="Opportunity5" id="ClosedLost" labelWidth="220px"> <!--CL19-->
+            <apex:pageBlock >
+                <apex:pageBlockTable value="{!optPR}" var="Opt">
+                    <apex:column value="{!Opt.Name}"/>
+                    <apex:column value="{!Opt.Account.Name}"/>
+                    <apex:column value="{!Opt.StageName}"/>
+                    <apex:column value="{!Opt.Amount}"/>
+                    <apex:column value="{!Opt.CloseDate}"/>
+                    <apex:column value="{!Opt.OwnerId}"/>
+                    <apex:column value="{!Opt.Probability}"/>
+                    <apex:column value="{!Opt.CurrencyIsoCode}"/>
+                </apex:pageBlockTable>
+            </apex:pageBlock>
+        </apex:tab> 
+    </apex:tabPanel>
+        </apex:pageBlock>
+    
+    <apex:form >
+        <apex:pageblock >
+            <apex:pageBlockButtons location="top">
+                <apex:commandLink styleClass="btn" style="padding: 5px; margin-right:50px; text-decoration: none;" 
+                                  value="{!$Label.AaLabel04}" action="{!customsave}"></apex:commandLink>
+                <button class="btn" style="padding:5px;" onclick="window.open('/{!$currentpage.parameters.id}', target='_self');return false;">Cancel</button>
+            </apex:pageBlockButtons>
+        </apex:pageblock>
+    </apex:form>
+</apex:page>
